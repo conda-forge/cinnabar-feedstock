@@ -1,5 +1,5 @@
 {% set name = "cinnabar" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/OpenFreeEnergy/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7398248526f89049eff94f9ded50860a8650cdb4b1b031efed0157225210737c
+  sha256: c2f6c4dc00e7cf0d9a0ca89e6ad7b15c99b37197dc3de82f97c05ddef3218441
 
 build:
   number: 0
