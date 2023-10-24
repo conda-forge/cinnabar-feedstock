@@ -1,11 +1,11 @@
-About cinnabar
-==============
+About cinnabar-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cinnabar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/OpenFreeEnergy/cinnabar
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cinnabar-feedstock/blob/main/LICENSE.txt)
 
 Summary: Consistent presentation of free energy data
 
