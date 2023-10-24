@@ -26,6 +26,7 @@ requirements:
     - matplotlib-base
     - networkx
     - numpy
+    - openff-models
     - plotly
     - python >=3.8
     - scikit-learn
