@@ -11,7 +11,7 @@ source:
   git_depth: -1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - matplotlib-base
     - networkx
     - numpy
-    - openff-models
+    - openff-models ~=0.1.2
     - plotly
     - python >=3.8
     - scikit-learn
