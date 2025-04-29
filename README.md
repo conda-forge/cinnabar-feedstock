@@ -32,14 +32,14 @@ Current release info
 Installing cinnabar
 ===================
 
-Installing `cinnabar` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `cinnabar` from the `conda-forge/label/cinnabar_rc` channel can be achieved by adding `conda-forge/label/cinnabar_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/cinnabar_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cinnabar` can be installed with `conda`:
+Once the `conda-forge/label/cinnabar_rc` channel has been enabled, `cinnabar` can be installed with `conda`:
 
 ```
 conda install cinnabar
@@ -54,26 +54,26 @@ mamba install cinnabar
 It is possible to list all of the versions of `cinnabar` available on your platform with `conda`:
 
 ```
-conda search cinnabar --channel conda-forge
+conda search cinnabar --channel conda-forge/label/cinnabar_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search cinnabar --channel conda-forge
+mamba search cinnabar --channel conda-forge/label/cinnabar_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search cinnabar --channel conda-forge
+mamba repoquery search cinnabar --channel conda-forge/label/cinnabar_rc
 
 # List packages depending on `cinnabar`:
-mamba repoquery whoneeds cinnabar --channel conda-forge
+mamba repoquery whoneeds cinnabar --channel conda-forge/label/cinnabar_rc
 
 # List dependencies of `cinnabar`:
-mamba repoquery depends cinnabar --channel conda-forge
+mamba repoquery depends cinnabar --channel conda-forge/label/cinnabar_rc
 ```
 
 
