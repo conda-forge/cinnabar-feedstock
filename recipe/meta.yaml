@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "cinnabar" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   git_depth: -1
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -27,7 +27,6 @@ requirements:
     - matplotlib-base
     - networkx
     - numpy
-    - openff-models ~=0.1.2
     - plotly
     - python >={{ python_min }}
     - scikit-learn
