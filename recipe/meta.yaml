@@ -39,9 +39,11 @@ test:
     - cinnabar
   requires:
     - pip
+    - pytest
     - python {{ python_min }}
   commands:
     - pip check
+    - pytest --pyargs cinnabar
 
 about:
   home: https://github.com/OpenFreeEnergy/cinnabar
