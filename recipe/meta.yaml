@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "cinnabar" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   git_depth: -1
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -22,13 +22,15 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools >=61.0
   run:
     - adjusttext
     - matplotlib-base
     - networkx
     - numpy
-    - openff-models ~=0.1.2
+    - openff-units
     - plotly
+    - pydantic >=1.10.17
     - python >={{ python_min }}
     - scikit-learn
     - seaborn
@@ -38,9 +40,11 @@ test:
     - cinnabar
   requires:
     - pip
+    - pytest
     - python {{ python_min }}
   commands:
     - pip check
+    - pytest --pyargs cinnabar
 
 about:
   home: https://github.com/OpenFreeEnergy/cinnabar
