@@ -12,7 +12,7 @@ source:
   git_depth: -1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - adjusttext
     - matplotlib-base
     - networkx
-    - numpy
+    - numpy <=2.4.0  # https://github.com/OpenFreeEnergy/cinnabar/issues/198
     - openff-units
     - plotly
     - pydantic >=1.10.17
