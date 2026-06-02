@@ -10,9 +10,8 @@ package:
   version: ${{ version }}
 
 source:
-  git: https://github.com/OpenFreeEnergy/${{ name }}.git
-  rev: ${{ version }}
-  depth: -1
+  url: https://github.com/OpenFreeEnergy/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: e096d995c71c2860fbdc45a1370801249e8cce5ee12b54cd6d9362ec40dd91bd
 
 build:
   number: 3
@@ -25,7 +24,7 @@ build:
 requirements:
   host:
     - pip
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - setuptools >=61.0
   run:
     - adjusttext
