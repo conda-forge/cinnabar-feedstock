@@ -14,12 +14,12 @@ source:
   sha256: 25455158cb70686394d98a810f7b5b1445eae95a44e69d2cb1b645cf9a69d155
 
 build:
-  number: 3
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
     entry_points:
-      - cinnabar = cinnabar.arsenic:main
+      - cinnabar = cinnabar.cli:main
 
 requirements:
   host:
@@ -30,10 +30,9 @@ requirements:
     - adjusttext
     - matplotlib-base
     - networkx
-    - numpy <2.4.0  # https://github.com/OpenFreeEnergy/cinnabar/issues/198
+    - numpy 
     - openff-units
     - plotly
-    - pydantic >=1.10.17
     - python >=${{ python_min }}
     - scikit-learn
     - seaborn
