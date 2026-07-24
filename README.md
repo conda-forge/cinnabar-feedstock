@@ -148,8 +148,6 @@ Feedstock Maintainers
 * [@RiesBen](https://github.com/RiesBen/)
 * [@atravitz](https://github.com/atravitz/)
 * [@dwhswenson](https://github.com/dwhswenson/)
+* [@jthorton](https://github.com/jthorton/)
 * [@mikemhenry](https://github.com/mikemhenry/)
-
-
-<!-- dummy commit to enable rerendering -->
 
